@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  font-family: "Roboto";
+}
+
+body {
+  background-color: hsl(235, 18%, 26%);
+  font-size: 16px;
+  color: hsl(234, 29%, 15%);
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  width: 929px;
+  height: 642px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 35px;
+  margin: 150px auto;
+  padding: 0 24px 0 0;
+}
+.card .container {
+  display: flex;
+  flex-direction: column;
+}
+.card .container .title {
+  text-align: center;
+  margin: 95px 0 10px 0;
+  font-size: 3.7rem;
+  padding: 0 85px 0 68px;
+}
+.card .container .descriptions {
+  display: flex;
+  flex-direction: column;
+  padding: 0 85px 0 68px;
+}
+.card .container .descriptions .title-description {
+  line-height: 1.5rem;
+}
+.card .container .descriptions .benefits {
+  display: flex;
+  align-items: center;
+}
+.card .container .descriptions .benefits img {
+  margin: 0.5rem 0.5rem 0.5rem 0;
+}
+.card .container .email {
+  display: flex;
+  flex-direction: column;
+  padding: 35px 85px 0 68px;
+}
+.card .container .email label {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.card .container .email input {
+  height: 55px;
+  border-radius: 10px;
+  padding-left: 1rem;
+  border: 2.7px solid hsl(231, 7%, 60%);
+  margin-bottom: 15px;
+}
+.card .container .email input:focus {
+  outline: none;
+  border: 3px solid hsl(231, 7%, 60%);
+}
+.card .container .email button {
+  height: 55px;
+  border-radius: 10px;
+  padding-left: 1rem;
+  background-color: hsl(234, 29%, 15%);
+  color: white;
+  border-style: none;
+  box-shadow: 0 4px 2px 2px hsl(234, 29%, 10%);
+}
+.card .container .email button:hover {
+  cursor: pointer;
+}
+.card .container .email button:active {
+  box-shadow: none;
+  margin-top: 6px;
+}
+.card .image {
+  width: 420px;
+  height: 100%;
+}
+.card .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.subscribing-card {
+  display: flex;
+  flex-direction: column;
+  margin: 150px auto;
+  max-width: 375px;
+  height: 424px;
+  padding: 48px 65px;
+  border-radius: 15px;
+  background-color: white;
+}
+.subscribing-card .success img {
+  width: 64px;
+}
+.subscribing-card .subscribing-title {
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 0 135px 0 0;
+  margin-bottom: 10px;
+}
+.subscribing-card .confirmation-email {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+.subscribing-card .desmiss-mesage {
+  margin-top: 17px;
+  text-align: center;
+  width: 100%;
+  height: 55px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: hsl(234, 29%, 15%);
+  box-shadow: 0 4px 2px 2px hsl(234, 29%, 10%);
+  color: white;
+}
+.subscribing-card .desmiss-mesage:hover {
+  cursor: pointer;
+}
+.subscribing-card .desmiss-mesage:active {
+  box-shadow: none;
+}
+
+.attribution {
+  font-size: 15px;
+  color: white;
+  text-align: center;
+}
+
+.attribution a, .a {
+  color: hsl(231, 7%, 60%);
+}
+.attribution a:hover, .a:hover {
+  color: hsl(234, 29%, 10%);
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    background-color: white;
+  }
+  body .subscribing-card {
+    margin: 145px 30px 40px 22px;
+    padding: 0;
+    font-size: 14px;
+    height: 100%;
+  }
+  body .subscribing-card .desmiss-mesage {
+    margin-top: 10rem;
+  }
+  body .subscribing-card .desmiss-mesage:active {
+    box-shadow: none;
+  }
+  body .attribution {
+    font-size: 14px;
+    width: 100%;
+    color: black;
+  }
+  body .attribution a {
+    font-weight: 700;
+    color: hsl(235, 18%, 26%);
+  }
+  body .attribution a:active {
+    color: hsl(234, 29%, 15%);
+  }
+}
+@media screen and (max-width: 375px) {
+  body {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+  }
+  body .image-mobile {
+    width: 100%;
+    height: 285px;
+    margin: 0 0 1px 0;
+    background-image: url("../assets/images/illustration-sign-up-mobile.svg");
+    background-size: cover;
+    background-position: center;
+  }
+  body .card {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  body .card .container {
+    height: 100%;
+  }
+  body .card .container .title {
+    margin: 45px 0 10px 0;
+    padding: 0 25px;
+    font-size: 3.2rem;
+  }
+  body .card .container .descriptions {
+    padding: 0 25px;
+  }
+  body .card .container .descriptions .benefits {
+    margin-bottom: 18px;
+  }
+  body .card .container .email {
+    padding: 20px 25px 0 25px;
+  }
+  body .card .image {
+    display: none;
+  }
+}/*# sourceMappingURL=styles.css.map */
